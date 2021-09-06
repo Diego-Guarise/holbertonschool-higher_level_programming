@@ -1,4 +1,3 @@
-  
 #!/usr/bin/python3
-import string
-print(string.ascii_uppercase)
+def magic_calculation(a, b):
+    return (98 + a ** b)
