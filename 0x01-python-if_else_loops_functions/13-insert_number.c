@@ -3,7 +3,7 @@
 #include "lists.h"
 listint_t *insert_node(listint_t **head, int number)
 {
-    listint_t *new = NULL, *run, *prev;
+    listint_t *new, *run, *prev;
 
     if (!head)
         return(NULL);
@@ -12,10 +12,13 @@ listint_t *insert_node(listint_t **head, int number)
     if (!new)
         return(NULL);
     run = *head;
+    new->n = number;
     while (run && number > run->n)
     {
         prev = run;
         run = run->next;
-        if (run->n < )
-    }
+    }    
+    prev->next = new;
+    new->next = run;
+    return(new);
 }
