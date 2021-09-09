@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from sys import argv, exit
-number = len(argv) - 1
 if __name__ == "__main__":
+    number = len(argv) - 1
     if number == 0:
         print("{} argument.".format(number))
         exit
@@ -15,3 +15,5 @@ if __name__ == "__main__":
         while i <= number:
             print("{}: {}".format(i, argv[i]))
             i += 1
+if __name__ == "__main__":
+    from sys import argv, exit
