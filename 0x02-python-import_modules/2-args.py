@@ -3,7 +3,7 @@ from sys import argv
 if __name__ == "__main__":
     number = len(argv) - 1
     if number == 0:
-        print("{} argument.".format(number))
+        print("{} arguments.".format(number))
     elif number == 1:
         print("{}: argument:".format(number))
         print("{}: {}".format(number, argv[1]))
@@ -13,4 +13,3 @@ if __name__ == "__main__":
         while i <= number:
             print("{}: {}".format(i, argv[i]))
             i += 1
-
