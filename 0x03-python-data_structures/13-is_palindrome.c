@@ -3,19 +3,19 @@
 #include <stdio.h>
 
 /**
- * isPalindromeUtil - asdasd
- * @left: asdasd
- * @right: asdasd
- * Return: 1 if palindrome, 0 otherwise
+ * isPalindrome - checkea si es polindrome
+ * @left: puntero que apunta al inicio
+ * @right: puntero que va hasta el final y vuelve dentro de recursividad
+ * Return: 1 si es palindrome, 0 sino lo es
  */
-int isPalindromeUtil(listint_t **left, listint_t *right)
+int isPalindrome(listint_t **left, listint_t *right)
 {
 	int true;
 
 	if (right == NULL)
 		return (1);
 
-	if (isPalindromeUtil(left, right->next))
+	if (isPalindrome(left, right->next))
 		true = 1;
 	if (!true)
 		return (0);
@@ -30,14 +30,14 @@ int isPalindromeUtil(listint_t **left, listint_t *right)
 }
 
 /**
- * is_palindrome - asdasd
- * @head: asdasd
- * Return: 1 if palindrome, 0 otherwise
+ * is_palindrome - compara el resultado con ispalindrome
+ * @head: lista
+ * Return: 1 si es palindrome, 0 sino es
  */
 int is_palindrome(listint_t **head)
 {
 	int check;
 
-	check = isPalindromeUtil(head, *head);
+	check = isPalindrome(head, *head);
 	return (check);
 }
