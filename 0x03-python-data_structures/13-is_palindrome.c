@@ -17,6 +17,8 @@ int isPalindrome(listint_t **left, listint_t *right)
 
 	if (isPalindrome(left, right->next))
 		true = 1;
+	else
+		true = 0;
 	if (!true)
 		return (0);
 	if (right->n == (*left)->n)
