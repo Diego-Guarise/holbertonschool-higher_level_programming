@@ -22,7 +22,7 @@ int isPalindrome(listint_t **left, listint_t *right)
 	if (right->n == (*left)->n)
 		true = 1;
 	else
-		return (0);
+		true = 0;
 
 	*left = (*left)->next;
 
