@@ -1,34 +1,43 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ * isPalindromeUtil - asdasd
+ * @left: asdasd
+ * @right: asdasd
+ * Return: 1 if palindrome, 0 otherwise
+ */
+int isPalindromeUtil(listint_t **left, listint_t *right)
+{
+	int true;
+
+	if (right == NULL)
+		return (1);
+
+	if (isPalindromeUtil(left, right->next))
+		true = 1;
+	if (!true)
+		return (0);
+	if (right->n == (*left)->n)
+		true = 1;
+	else
+		return (0);
+
+	*left = (*left)->next;
+
+	return (true);
+}
+
+/**
+ * is_palindrome - asdasd
+ * @head: asdasd
+ * Return: 1 if palindrome, 0 otherwise
+ */
 int is_palindrome(listint_t **head)
 {
-    int count = 1, i;
-    listint_t *run1, *run2, *new, *new2;
+	int check;
 
-    if (!head)
-        return(NULL);
-    run = *head;
-    while(run->next)
-    {
-        run = run->next;
-        count++;
-    }
-    run2 = *head;
-    for(i = 0; i != (count/2); i++)
-    {
-        run2 = run2->next;
-        if(i + 1 == (count/2))
-        {
-             new = run2;
-             new->next = run2->next;
-        }
-    }
-    new2 = *head
-    for(x = 0; x != (count/2); x++)
-    {
-        if(new->n != new2->n)
-            return(0);
-    }
-    return(1);
+	check = isPalindromeUtil(head, *head);
+	return (check);
 }
