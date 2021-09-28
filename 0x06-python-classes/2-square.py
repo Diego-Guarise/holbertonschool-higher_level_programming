@@ -3,8 +3,8 @@
 
 
 class Square:
+    """Initializes the data."""
     def __init__(self, size = 0):
-        """Initializes the data."""
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:

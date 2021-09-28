@@ -9,9 +9,9 @@ Public instance method: def area(self).
 
 
 class Square:
+    """Initializes the data."""
     def __init__(self, size = 0):
-        """Initializes the data."""
-	self.__size = size
+        self.__size = size
 
     def area(self):
         """Returns the current square area."""
