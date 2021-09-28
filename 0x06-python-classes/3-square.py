@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-"""Represents a square.
-Private instance attribute: size.
-Instantiation with optional size.
-Public instance method: def area(self).
-"""
+"""Represents a square."""
+
+
 class Square:
     """Initializes the data."""
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -16,4 +14,4 @@ class Square:
 
     def area(self):
         """Returns the current square area."""
-	return self.__size * self.__size
+        return self.__size*self.__size
