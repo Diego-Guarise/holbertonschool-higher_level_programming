@@ -70,3 +70,14 @@ class Rectangle:
                 strr += '\n'
             return strr[:-1]
 
+    def __repr__(self):
+        '''repr'''
+        reprr = ""
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        else:
+            for f in range(self.__height):
+                for c in range(self.__width):
+                    reprr += '#'
+                reprr += '\n'
+            return 
