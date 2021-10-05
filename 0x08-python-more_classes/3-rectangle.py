@@ -69,4 +69,3 @@ class Rectangle:
                     strr += '#'
                 strr += '\n'
             return strr[:-1]
-
