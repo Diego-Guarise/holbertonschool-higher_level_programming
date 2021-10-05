@@ -7,11 +7,8 @@ class Rectangle:
     '''Represents an empty rectangle.'''
 
     number_of_instances = 0
-    symbol = '#'
+    print_symbol = '#'
     def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
-        Rectangle.number_of_instances += 1
         if type(width) is not int:
             raise TypeError("width must be an integer")
         if type(height) is not int:
@@ -20,6 +17,9 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         if height < 0:
             raise ValueError("height must be >= 0")
+        self.__width = width
+        self.__height = height
+        Rectangle.number_of_instances += 1
 
     def area(self):
         '''area'''
@@ -70,7 +70,7 @@ class Rectangle:
         else:
             for f in range(self.__height):
                 for c in range(self.__width):
-                    strr += str(self.symbol)
+                    strr += str(self.print_symbol)
                 strr += '\n'
             return strr[:-1]
 
