@@ -1,7 +1,4 @@
-echo 'Que te subo a github pa?:'
-read fileorfolder
-
-git add "$fileorfolder"
+git add .
 
 
 echo 'Nombre del commit:'
