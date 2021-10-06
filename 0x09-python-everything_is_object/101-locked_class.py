@@ -1,7 +1,4 @@
 #!/usr/bin/python3
 class LockedClass:
-    """slot"""
-    __slots__ = ['first_name']
-
-    def __init__(self, first_name=''):
-        self.first_name = first_name
+    """previene que el usuario cree una instancia"""
+    __slots__ = ["first_name"]
