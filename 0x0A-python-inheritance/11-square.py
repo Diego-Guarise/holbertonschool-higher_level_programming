@@ -19,3 +19,7 @@ class Square(Rectangle):
 
     def __str___(self):
         return str("[Square] {}/{}".format(self.__size, self.__size))
+
+    def area(self):
+        """one size x2"""
+        super().area()
