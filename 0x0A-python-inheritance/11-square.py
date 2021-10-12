@@ -22,4 +22,4 @@ class Square(Rectangle):
 
     def area(self):
         """one size x2"""
-        super().area()
+        return self.__size * self.__size
