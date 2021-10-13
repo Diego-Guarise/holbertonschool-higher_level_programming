@@ -3,6 +3,7 @@
 """
 
 
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 Rectangle = __import__('9-rectangle').Rectangle
 """import the rectangle"""
 
@@ -19,6 +20,8 @@ class Square(Rectangle):
 
     def __str___(self):
         """print"""
-        a = "[{}] ".format(type(self).__name__)
-        a += "{}/{}".format(self.__size, self.__size)
-        return a
+        return str("[Square] {}/{}".format(self.__size, self.__size))
+
+    def area(self):
+        """area"""
+        return self.__size ** 2
