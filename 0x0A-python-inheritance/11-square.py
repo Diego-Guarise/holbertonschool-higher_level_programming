@@ -13,9 +13,11 @@ class Square(Rectangle):
         """size must be private. No getter or setter
         size must be a positive integer, validated by integer_validator
         """
+        self.integer_validator("size", size)
         self.__size = size
         super().__init__(self.__size, self.__size)
 
     def __str___(self):
         """print"""
-        return str("[Square] {}/{}".format(self.__size, self.__size))
+        p = "[Square] {}/{}".format(self.__size, self.__size)
+        return p
