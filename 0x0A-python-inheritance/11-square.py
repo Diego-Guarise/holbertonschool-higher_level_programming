@@ -19,4 +19,6 @@ class Square(Rectangle):
 
     def __str___(self):
         """print"""
-        return ("[" + str(type(self).__name__) + "] " + str(self.__size) + "/" + str(self.__size))
+        a = ("[" + str(self.__name__) + "] " + str(self.__size))
+        a += ("/" + str(self.__size))
+        return a
