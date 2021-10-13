@@ -2,9 +2,11 @@
 """define"""
 
 
-def add_attribute(*args):
+def add_attribute(an_obj, an_attr, a_value):
     """add"""
-    if "main" in str(type(args[0])):
-        setattr(args[0], args[1], args[2])
-    else:
+    if not hasattr(an_obj, '__slots__') and not hasattr(an_obj, '__dict__'):
         raise TypeError("can't add new attribute")
+    if hasattr(an_obj, '__slots__') and not hasattr(an_obj, an_attr):
+        raise TypeError("can't add new attribute")
+
+    setattr(an_obj, an_attr, a_value)
