@@ -8,10 +8,8 @@ def append_after(filename="", search_string="", new_string=""):
     string = ""
 
     with open(filename) as a:
-
         for line in a:
             string += line
-
             if search_string in line:
                 string += new_string
 
