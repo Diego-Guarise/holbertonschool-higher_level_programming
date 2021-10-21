@@ -38,33 +38,28 @@ class Rectangle(Base):
         self.id = id
         super().__init__(id)
 
-    @property
+   """ @property
     def width(self):
-        """return atrribute"""
 
         return self.__width
 
     @property
     def height(self):
-        """return attribute"""
 
         return self.__height
 
     @property
     def x(self):
-        """return attribute"""
 
         return self.__x
 
     @property
     def y(self):
-        """return attribute"""
 
         return self.__y
 
     @width.setter
     def width(self, width):
-        """set attribute"""
 
         if type(width) is not int:
             raise TypeError("width must be an integer")
@@ -74,7 +69,6 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, height):
-        """set attribute"""
 
         if type(height) is not int:
             raise TypeError("height must be an integer")
@@ -84,7 +78,6 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, x):
-        """set attribute"""
 
         if type(x) is not int:
             raise TypeError("x must be an integer")
@@ -94,7 +87,6 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, y):
-        """set attribute"""
 
         if type(y) is not int:
             raise TypeError("y must be an integer")
@@ -103,12 +95,10 @@ class Rectangle(Base):
         self.__y = y
 
     def area(self):
-        """area"""
 
         return self.__width * self.__height
 
     def display(self):
-        """prints in stdout the Rectangle"""
 
         for a in range(0, self.__height):
             for b in range(0, self.__width):
@@ -116,15 +106,12 @@ class Rectangle(Base):
             print("")
 
     def __str__(self):
-        """ return [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
 
         strr = "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.__x, self.__y, self.__width, self.__height)
         return strr
 
     def display(self):
-        """print in stdout the Rectangle instance with the
-        character # by taking care of x and y"""
 
         for f in range(0, self.__y):
             print()
@@ -136,7 +123,6 @@ class Rectangle(Base):
             print()
 
     def update(self, *args, **kwargs):
-        """changed attributes"""
 
         if args is not None and len(args) != 0:
             if len(args) >= 0:
@@ -165,7 +151,6 @@ class Rectangle(Base):
                     self.y = value
 
     def to_dictionary(self):
-        """Returns the dictionary representation of a Rectangle."""
 
         my_dict = {'id': self.id, 'width': self.__width,
                    'height': self.__height, 'x': self.__x, 'y': self.__y}
