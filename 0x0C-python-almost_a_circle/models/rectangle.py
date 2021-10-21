@@ -98,10 +98,10 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = y
 
-    def area(self):
-        """colo"""
+#    def area(self):
+#        """colo"""
 
-        return self.__width * self.__height
+#        return self.__width * self.__height
 
 #    def display(self):
 #        """colo"""
