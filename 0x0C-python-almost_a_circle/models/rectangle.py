@@ -40,7 +40,7 @@ class Rectangle(Base):
         self.id = id
         super().__init__(id)
 
-   """ @property
+    @property
     def width(self):
 
         return self.__width
@@ -96,7 +96,7 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = y
 
-    def area(self):
+   """def area(self):
 
         return self.__width * self.__height
 
@@ -156,4 +156,4 @@ class Rectangle(Base):
 
         my_dict = {'id': self.id, 'width': self.__width,
                    'height': self.__height, 'x': self.__x, 'y': self.__y}
-        return my_dict
+        return my_dict"""
