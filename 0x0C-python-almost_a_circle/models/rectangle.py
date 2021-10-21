@@ -102,7 +102,7 @@ class Rectangle(Base):
         """colo"""
 
         return self.width * self.height
-                    
+
 #    def display(self):
 #        """colo"""
 
