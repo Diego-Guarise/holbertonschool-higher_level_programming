@@ -49,24 +49,24 @@ class Rectangle(Base):
         """Colo"""
         return self.__height
 
-#    @property
-#    def x(self):
+    @property
+    def x(self):
+        """Colo"""
+        return self.__x
 
-#        return self.__x
+    @property
+    def y(self):
+        """Colo"""
+        return self.__y
 
-#    @property
-#    def y(self):
-
-#        return self.__y
-
-#    @width.setter
-#    def width(self, width):
-
-#        if type(width) is not int:
-#            raise TypeError("width must be an integer")
-#        if width <= 0:
-#            raise ValueError("width must be > 0")
-#        self.__width = width
+    @width.setter
+    def width(self, width):
+        """Colo"""
+        if type(width) is not int:
+            raise TypeError("width must be an integer")
+        if width <= 0:
+            raise ValueError("width must be > 0")
+        self.__width = width
 
 #    @height.setter
 #    def height(self, height):
