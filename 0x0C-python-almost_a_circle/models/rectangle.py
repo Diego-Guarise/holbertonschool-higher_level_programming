@@ -99,7 +99,7 @@ class Rectangle(Base):
         self.__y = y
 
     def area(self):
-        """colo"""
+        """Colo"""
 
 #        return self.width * self.height
 
