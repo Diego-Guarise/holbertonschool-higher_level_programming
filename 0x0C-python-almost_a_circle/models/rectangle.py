@@ -39,14 +39,14 @@ class Rectangle(Base):
         self.id = id
         super().__init__(id)
 
-    @property
-    def width(self):
+#    @property
+#    def width(self):
+#        """Colo"""
+#        return self.__width
 
-        return self.__width
-
-    @property
-    def height(self):
-
+#    @property
+#    def height(self):
+#        """Colo"""
 #        return self.__height
 
 #    @property
@@ -155,4 +155,4 @@ class Rectangle(Base):
 
 #        my_dict = {'id': self.id, 'width': self.__width,
 #                   'height': self.__height, 'x': self.__x, 'y': self.__y}
-#        return my_dict"""
+#        return my_dict
