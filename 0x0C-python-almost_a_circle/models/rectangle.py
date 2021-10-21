@@ -1,16 +1,18 @@
 #!/usr/bin/python3
-"""Write the class Rectangle that inherits from Base"""
-
+"""
+hddjdjeickd
+"""
 
 from models.base import Base
 
 
 class Rectangle(Base):
-    """contructor"""
+        """ class Rectangle from Base """
 
-    def __init__(self, width, height, x=0, y=0, id=None):
-        """attributes"""
-
+        
+            def __init__(self, width, height, x=0, y=0, id=None):
+                        """ init Rectangle class """
+                        
         if type(width) is not int:
             raise TypeError("width must be an integer")
         if width <= 0:
