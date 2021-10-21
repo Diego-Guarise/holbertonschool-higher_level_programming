@@ -101,7 +101,7 @@ class Rectangle(Base):
     def area(self):
         """Colo"""
 
-#        return self.width * self.height
+        return self.width * self.height
 
 #    def display(self):
 #        """colo"""
