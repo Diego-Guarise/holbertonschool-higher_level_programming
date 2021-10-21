@@ -10,6 +10,7 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """attributes"""
+
         if type(width) is not int:
             raise TypeError("width must be an integer")
         if width <= 0:
@@ -40,26 +41,31 @@ class Rectangle(Base):
     @property
     def width(self):
         """return atrribute"""
+
         return self.__width
 
     @property
     def height(self):
         """return attribute"""
+
         return self.__height
 
     @property
     def x(self):
         """return attribute"""
+
         return self.__x
 
     @property
     def y(self):
         """return attribute"""
+
         return self.__y
 
     @width.setter
     def width(self, width):
         """set attribute"""
+
         if type(width) is not int:
             raise TypeError("width must be an integer")
         if width <= 0:
@@ -69,6 +75,7 @@ class Rectangle(Base):
     @height.setter
     def height(self, height):
         """set attribute"""
+
         if type(height) is not int:
             raise TypeError("height must be an integer")
         if height <= 0:
@@ -78,6 +85,7 @@ class Rectangle(Base):
     @x.setter
     def x(self, x):
         """set attribute"""
+
         if type(x) is not int:
             raise TypeError("x must be an integer")
         if x < 0:
@@ -87,6 +95,7 @@ class Rectangle(Base):
     @y.setter
     def y(self, y):
         """set attribute"""
+
         if type(y) is not int:
             raise TypeError("y must be an integer")
         if y < 0:
@@ -95,10 +104,12 @@ class Rectangle(Base):
 
     def area(self):
         """area"""
+
         return self.__width * self.__height
 
     def display(self):
         """prints in stdout the Rectangle"""
+
         for a in range(0, self.__height):
             for b in range(0, self.__width):
                 print("#", end="")
@@ -106,6 +117,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """ return [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
+
         strr = "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.__x, self.__y, self.__width, self.__height)
         return strr
@@ -113,6 +125,7 @@ class Rectangle(Base):
     def display(self):
         """print in stdout the Rectangle instance with the
         character # by taking care of x and y"""
+
         for f in range(0, self.__y):
             print()
         for c in range(0, self.__height):
@@ -124,6 +137,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """changed attributes"""
+
         if args is not None and len(args) != 0:
             if len(args) >= 0:
                 if type(args[0]) != int:
@@ -152,6 +166,7 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """Returns the dictionary representation of a Rectangle."""
+
         my_dict = {'id': self.id, 'width': self.__width,
                    'height': self.__height, 'x': self.__x, 'y': self.__y}
         return my_dict
