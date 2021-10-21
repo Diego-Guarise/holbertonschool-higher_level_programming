@@ -44,10 +44,10 @@ class Rectangle(Base):
         """Colo"""
         return self.__width
 
-#    @property
-#    def height(self):
-#        """Colo"""
-#        return self.__height
+    @property
+    def height(self):
+        """Colo"""
+        return self.__height
 
 #    @property
 #    def x(self):
