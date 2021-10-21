@@ -39,13 +39,13 @@ class Rectangle(Base):
         self.id = id
         super().__init__(id)
 
-#    @property
-#    def width(self):
+    @property
+    def width(self):
 
-#        return self.__width
+        return self.__width
 
-#    @property
-#    def height(self):
+    @property
+    def height(self):
 
 #        return self.__height
 
