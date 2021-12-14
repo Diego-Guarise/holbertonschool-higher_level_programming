@@ -8,7 +8,7 @@ module.exports = class Square extends sq {
         if (!c) {
           a += 'X' + '';
         } else {
-          a += 'C' + '';
+          a += c + '';
         }
       }
       console.log(a);
