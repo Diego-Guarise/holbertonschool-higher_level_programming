@@ -15,9 +15,8 @@ if __name__ == "__main__":
         charset="utf8")
 
     cur = conn.cursor()
-    cur.execute("SELECT cities.name FROM cities JOIN states ON\
-    cities.states.id = state_id WHERE states.name =\
-                (%s) ORDER BY cities.id", (arglist[4],))
+    cur.execute("SELECT C.name FROM cities C JOINates S ON C.state_id\
+                = S.id WHERE S.name = (%s) ORDER BY C.id", (arglist[4],))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
