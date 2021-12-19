@@ -19,5 +19,5 @@ if __name__ == "__main__":
     state = session.query(State).order_by(State.id)\
         .filter(State.name.contains('a')).all()
     for i in state:
-        print("{}: {}".format(state.id, state.name))
+        print("{}: {}".format(i.id, i.name))
     session.close()
