@@ -17,7 +17,7 @@ if __name__ == "__main__":
     cur = conn.cursor()
     cur.execute("SELECT cities.name FROM cities JOIN states ON\
     cities.states.id = state_id WHERE states.name =\
-                (%s) ORDER BY cities.id ASC", (arglist[4],))
+                (%s) ORDER BY cities.id", (arglist[4],))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
