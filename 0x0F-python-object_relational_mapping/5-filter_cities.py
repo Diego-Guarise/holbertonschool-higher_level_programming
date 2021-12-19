@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """All cities byate"""
 
-import MySQLdb
-import sys
 
 if __name__ == "__main__":
+    import MySQLdb
+    import sys
+
     arglist = sys.argv
     conn = MySQLdb.connect(
         host="localhost",

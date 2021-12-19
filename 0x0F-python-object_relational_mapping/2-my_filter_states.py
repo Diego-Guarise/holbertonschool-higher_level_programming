@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """Filterates by user input"""
 
-import MySQLdb
-import sys
 
 if __name__ == "__main__":
+    import sys
+    import MySQLdb
+
     arglist = sys.argv
     conn = MySQLdb.connect(
         host="localhost",
