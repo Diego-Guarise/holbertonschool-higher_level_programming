@@ -19,6 +19,6 @@ if __name__ == "__main__":
     session.add(State(name='Louisiana'))
     session.commit()
     state = session.query(State).order_by(State.id)\
-        .filter(State.name == 'Louisiana').all()
+        .filter(State.name == 'Louisiana').first()
     print("{}".format(state.id))
     session.close()
