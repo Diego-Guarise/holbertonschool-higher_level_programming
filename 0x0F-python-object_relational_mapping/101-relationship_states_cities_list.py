@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Get state"""
+""" Get state"""
 
 
 if __name__ == "__main__":
