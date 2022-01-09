@@ -1,4 +1,4 @@
 #!/bin/bash
 # cURL body size
 
-curl -so /dev/null '$1' -w '%{size_download}' '$1'
+curl -sI '$1' | grep 'Content-Length' | cut -d ' ' -f2
