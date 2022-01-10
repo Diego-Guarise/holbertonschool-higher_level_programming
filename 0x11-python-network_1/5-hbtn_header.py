@@ -12,4 +12,3 @@ if __name__ == "__main__":
 
     html = requests.get(argv[1])
     print(html.headers.get('x-request-id'))
-    
